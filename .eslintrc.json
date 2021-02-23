@@ -1,0 +1,57 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "jest": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "babel",
+    "better-styled-components",
+    "eslint-plugin-import-helpers"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [0],
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "better-styled-components/sort-declarations-alphabetically": 2,
+    "global-require": "off",
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "off",
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "no-alert": 0,
+    "react/button-has-type": 0,
+    "max-len": "off",
+    "no-unused-expressions": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": ["/^react/", "module", "/^@/", ["parent", "sibling", "index"]],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ],
+    "react/react-in-jsx-scope": "off"
+  }
+}
